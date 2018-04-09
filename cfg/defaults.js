@@ -45,24 +45,28 @@ function getDefaultModules() {
         loader: 'style-loader!css-loader!stylus-loader'
       },
       {
-        test: /\.(png|jpg|gif|woff|woff2)$/,
+        test: /\.(png|jpg|gif|woff|woff2|eot|ttf|svg)$/,
         loader: 'url-loader?limit=8192'
       },
       {
         test: /\.(mp4|ogg|svg)$/,
         loader: 'file-loader'
       },
-      {
+       {
+
         test: /\.json$/,
+
         loader: 'json-loader'
+
       }
     ]
   };
 }
 
 module.exports = {
+  devtool: 'source-map',
   srcPath: srcPath,
-  publicPath: '/assets/',
+  publicPath: 'assets/',
   port: dfltPort,
   getDefaultModules: getDefaultModules
 };
