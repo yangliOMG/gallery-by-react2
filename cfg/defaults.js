@@ -64,7 +64,6 @@ function getDefaultModules() {
 }
 
 module.exports = {
-  devtool: 'source-map',
   srcPath: srcPath,
   publicPath: '/assets/',
   port: dfltPort,
