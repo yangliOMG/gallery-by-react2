@@ -7,9 +7,13 @@ npm install -g generator-react-webpack
 
 npm ls -g --depth=1 2>/dev/null | grep generator-	//查看rw的版本
 > npm ls -g	列出所有npm包
+
 > 1  	列出一级树状结构
+
 > 2>/dev/null	过滤错误消息
+
 > | 	上一个命令的输出作为下一个命令的输入
+
 > grep xxxx 搜索关键字
 
 在github中新建项目，选择mit listens
