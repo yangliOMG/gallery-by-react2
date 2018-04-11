@@ -24,7 +24,7 @@ yo react-webpack xxx  利用yo生成rw框架  === cd xxx  ,yo react-webpack
 
 
 ### npm命令
-* npm start / npm run serve
+* __npm start / npm run serve //启动项目__
 * npm run dist 	//打包到dist目录下，（package.json->scripts中，包含npm run xxxx 命令）
 * npm run serve:dist	//运行dist目录下的代码
 
