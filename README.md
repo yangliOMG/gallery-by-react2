@@ -1,5 +1,6 @@
 ### 初始配置
-npm install -g yo	yeoman 将最佳的工具整合安装
+##### 全局
+npm install -g yo	//yeoman 将最佳的工具整合安装
 
 yo -v
 
@@ -16,6 +17,7 @@ npm ls -g --depth=1 2>/dev/null | grep generator-	//查看rw的版本
 
 > grep xxxx 搜索关键字
 
+##### 项目
 在github中新建项目，选择mit listens
 
 git clone http://	下载
