@@ -163,7 +163,7 @@ class AppComponent extends React.Component {
     // 计算中心图片的位置
     this.Constant.centerPos = {
       left: halfStageW - halfImgW,
-      top: halfStageH - halfImgH 
+      top: halfStageH - halfImgH
     }
     // calculate the range of posiztion for the left and right sec
     this.Constant.hPosRange.leftSecX[0] = -halfImgW;
@@ -185,7 +185,6 @@ class AppComponent extends React.Component {
   }
 
   render() {
-
   	let controllerUnits = [], imgFigures = [];
   	imageDatas.forEach((value,i)=>{
   		if (!this.state.imgArrangeArr[i]) {
@@ -199,14 +198,14 @@ class AppComponent extends React.Component {
 	          isCenter: false
 	        }
 	    }
-  		imgFigures.push(<ImgFigure data={value} key={i} ref={'imgFigure'+i} 
-  			arrange={this.state.imgArrangeArr[i]} inverse={this.inverse(i)} center={this.center(i)}/>); 
+  		imgFigures.push(<ImgFigure data={value} key={i} ref={'imgFigure'+i}
+  			arrange={this.state.imgArrangeArr[i]} inverse={this.inverse(i)} center={this.center(i)}/>);
   		controllerUnits.push(<ControllerUnit key={i} arrange={this.state.imgArrangeArr[i]}
                                            inverse={this.inverse(i)} center={this.center(i)}/>);
   	});
 
     return (
-      <section className="stage" ref="stage">	
+      <section className="stage" ref="stage">
       	<section className="img-sec">{imgFigures}</section>
       	<nav className="controller-nav">{controllerUnits}</nav>
 

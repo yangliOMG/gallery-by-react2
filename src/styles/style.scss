@@ -1,11 +1,18 @@
 @font-face {
   font-family: 'iconfont';
-  src: url('../fonts/icons/iconfont.eot');
-  src: url('../fonts/icons/iconfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/icons/iconfont.woff') format('woff'),
-  url('../fonts/icons/iconfont.ttf') format('truetype'),
-  url('../fonts/icons/iconfont.svg#iconfont') format('svg');
+ src: url('../fonts/icons/iconfont.svg#iconfont') format('svg');
+  src: url('../fonts/icons/turn-arrow.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/icons/turn-arrow.woff') format('woff'),
+  url('../fonts/icons/turn-arrow.ttf') format('truetype'),
+  url('../fonts/icons/turn-arrow.svg#iconfont') format('svg');
 }
+// @font-face {font-family: "iconfont";
+//   src: url('../fonts/icons/heart.eot'); /* IE9*/
+//   src: url('../fonts/icons/heart.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//   url('../fonts/icons/heart.woff') format('woff'),
+//   url('../fonts/icons/heart.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+//   url('../fonts/icons/heart.svg#iconfont') format('svg'); /* iOS 4.1- */
+// }
 
 html,body{
 	width: 100%;
@@ -129,6 +136,7 @@ html,body{
           color: #fff;
           font-size: 80%;
           line-height: 30px;
+          // content: "\e627";
           content: "\e600";
 
           -webkit-font-smoothing: antialiased;

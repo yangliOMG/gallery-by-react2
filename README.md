@@ -76,6 +76,7 @@ module.exports = {
 ## 总结
 * gulp从基础框架开始搭建，webpack已经将基础框架搭建好。
 * .editorconfig  	编译器配置
+* 控制台警告'warning  Trailing spaces not allowed  no-trailing-spaces' ->有多余的空格
 
 
 
