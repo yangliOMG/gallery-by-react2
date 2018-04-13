@@ -14,17 +14,17 @@ let config = Object.assign({}, baseConfig, {
   cache: false,
   devtool: 'sourcemap',
   plugins: [
-    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.DedupePlugin(),  //检测重复再删除
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
     }),
     new BowerWebpackPlugin({
       searchResolveModulesDirectories: false
     }),
-    new webpack.optimize.UglifyJsPlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.AggressiveMergingPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.optimize.UglifyJsPlugin(),  //压缩文件
+    new webpack.optimize.OccurenceOrderPlugin(),    //给模块排序，频率高的排前面id短，从而优化
+    new webpack.optimize.AggressiveMergingPlugin(), //合并
+    new webpack.NoErrorsPlugin()        //编译保证不报错
   ],
   module: defaultSettings.getDefaultModules()
 });

@@ -29,7 +29,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],
-    alias: {
+    alias: {  //从而省略require(../)中的相对路径
       actions: `${defaultSettings.srcPath}/actions/`,
       components: `${defaultSettings.srcPath}/components/`,
       sources: `${defaultSettings.srcPath}/sources/`,
