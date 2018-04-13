@@ -30,6 +30,9 @@ yo react-webpack xxx  利用yo生成rw框架  === cd xxx  ,yo react-webpack
 * npm run dist 	//打包到dist目录下，（package.json->scripts中，包含npm run xxxx 命令）
 * npm run serve:dist	//运行dist目录下的代码
 
+* npm uninstall xxx	//删除xxx模块； 
+* npm uninstall -g xxx	//删除全局模块xxx；
+
 ### 额外配置
 chrome.google.com/webstore   -> react developer tools	谷歌商店react插件 f12
 
@@ -40,6 +43,7 @@ chrome.google.com/webstore   -> react developer tools	谷歌商店react插件 f1
 * npm install json-loader --save-dev
 
 ##### 在cfg/default.js下
+* getDefaultModules()，在js能直接require  scss,png,jsx文件就是靠这个配置
 
 添加 !autoprefixer-loader?{browsers:["last 2 version"]}到scss，css下
 
@@ -65,9 +69,9 @@ module.exports = {
 ### 提交操作
 * git status	//查看状态
 
-* git add -A	//提交到master
-* git commit -m "xxx"  说明
-* git push 提交
+* git add -A	//把未加入track的文件加入到track
+* git commit -m "xxx"  //说明
+* git push //提交到master
 
 * git add dist	//把dist目录作为分支gh-pages，再提交
 * git commit -m ""
@@ -75,7 +79,8 @@ module.exports = {
 
 ## 总结
 * gulp从基础框架开始搭建，webpack已经将基础框架搭建好。
-* .editorconfig  	编译器配置
+* .editorconfig  	编译器配置，约定多种编辑器排版格式
+* webpack.config.js  webpack开发环境配置
 * 控制台警告'warning  Trailing spaces not allowed  no-trailing-spaces' ->有多余的空格
 
 
